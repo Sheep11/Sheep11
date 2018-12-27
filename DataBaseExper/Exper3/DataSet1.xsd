@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ProductInventory" msprop:Generator_TableClassName="ProductInventoryDataTable" msprop:Generator_TableVarName="tableProductInventory" msprop:Generator_TablePropName="ProductInventory" msprop:Generator_RowDeletingName="ProductInventoryRowDeleting" msprop:Generator_RowChangingName="ProductInventoryRowChanging" msprop:Generator_RowEvHandlerName="ProductInventoryRowChangeEventHandler" msprop:Generator_RowDeletedName="ProductInventoryRowDeleted" msprop:Generator_UserTableName="ProductInventory" msprop:Generator_RowChangedName="ProductInventoryRowChanged" msprop:Generator_RowEvArgName="ProductInventoryRowChangeEvent" msprop:Generator_RowClassName="ProductInventoryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProductID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnProductID" msprop:Generator_ColumnPropNameInRow="ProductID" msprop:Generator_ColumnPropNameInTable="ProductIDColumn" msprop:Generator_UserColumnName="ProductID" type="xs:int" />
+              <xs:element name="LocationID" msprop:Generator_ColumnVarNameInTable="columnLocationID" msprop:Generator_ColumnPropNameInRow="LocationID" msprop:Generator_ColumnPropNameInTable="LocationIDColumn" msprop:Generator_UserColumnName="LocationID" type="xs:short" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ProductNumber" msprop:Generator_ColumnVarNameInTable="columnProductNumber" msprop:Generator_ColumnPropNameInRow="ProductNumber" msprop:Generator_ColumnPropNameInTable="ProductNumberColumn" msprop:Generator_UserColumnName="ProductNumber">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Quantity" msprop:Generator_ColumnVarNameInTable="columnQuantity" msprop:Generator_ColumnPropNameInRow="Quantity" msprop:Generator_ColumnPropNameInTable="QuantityColumn" msprop:Generator_UserColumnName="Quantity" type="xs:short" />
+              <xs:element name="Expr3" msprop:Generator_ColumnVarNameInTable="columnExpr3" msprop:Generator_ColumnPropNameInRow="Expr3" msprop:Generator_ColumnPropNameInTable="Expr3Column" msprop:Generator_UserColumnName="Expr3" type="xs:short" />
+              <xs:element name="Color" msprop:Generator_ColumnVarNameInTable="columnColor" msprop:Generator_ColumnPropNameInRow="Color" msprop:Generator_ColumnPropNameInTable="ColorColumn" msprop:Generator_UserColumnName="Color" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SafetyStockLevel" msprop:Generator_ColumnVarNameInTable="columnSafetyStockLevel" msprop:Generator_ColumnPropNameInRow="SafetyStockLevel" msprop:Generator_ColumnPropNameInTable="SafetyStockLevelColumn" msprop:Generator_UserColumnName="SafetyStockLevel" type="xs:short" />
+              <xs:element name="ReorderPoint" msprop:Generator_ColumnVarNameInTable="columnReorderPoint" msprop:Generator_ColumnPropNameInRow="ReorderPoint" msprop:Generator_ColumnPropNameInTable="ReorderPointColumn" msprop:Generator_UserColumnName="ReorderPoint" type="xs:short" />
+              <xs:element name="StandardCost" msprop:Generator_ColumnVarNameInTable="columnStandardCost" msprop:Generator_ColumnPropNameInRow="StandardCost" msprop:Generator_ColumnPropNameInTable="StandardCostColumn" msprop:Generator_UserColumnName="StandardCost" type="xs:decimal" />
+              <xs:element name="ListPrice" msprop:Generator_ColumnVarNameInTable="columnListPrice" msprop:Generator_ColumnPropNameInRow="ListPrice" msprop:Generator_ColumnPropNameInTable="ListPriceColumn" msprop:Generator_UserColumnName="ListPrice" type="xs:decimal" />
+              <xs:element name="Size" msprop:Generator_ColumnVarNameInTable="columnSize" msprop:Generator_ColumnPropNameInRow="Size" msprop:Generator_ColumnPropNameInTable="SizeColumn" msprop:Generator_UserColumnName="Size" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Weight" msprop:Generator_ColumnVarNameInTable="columnWeight" msprop:Generator_ColumnPropNameInRow="Weight" msprop:Generator_ColumnPropNameInTable="WeightColumn" msprop:Generator_UserColumnName="Weight" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DaysToManufacture" msprop:Generator_ColumnVarNameInTable="columnDaysToManufacture" msprop:Generator_ColumnPropNameInRow="DaysToManufacture" msprop:Generator_ColumnPropNameInTable="DaysToManufactureColumn" msprop:Generator_UserColumnName="DaysToManufacture" type="xs:int" />
+              <xs:element name="ProductLine" msprop:Generator_ColumnVarNameInTable="columnProductLine" msprop:Generator_ColumnPropNameInRow="ProductLine" msprop:Generator_ColumnPropNameInTable="ProductLineColumn" msprop:Generator_UserColumnName="ProductLine" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Class" msprop:Generator_ColumnVarNameInTable="columnClass" msprop:Generator_ColumnPropNameInRow="Class" msprop:Generator_ColumnPropNameInTable="ClassColumn" msprop:Generator_UserColumnName="Class" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Style" msprop:Generator_ColumnVarNameInTable="columnStyle" msprop:Generator_ColumnPropNameInRow="Style" msprop:Generator_ColumnPropNameInTable="StyleColumn" msprop:Generator_UserColumnName="Style" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SellStartDate" msprop:Generator_ColumnVarNameInTable="columnSellStartDate" msprop:Generator_ColumnPropNameInRow="SellStartDate" msprop:Generator_ColumnPropNameInTable="SellStartDateColumn" msprop:Generator_UserColumnName="SellStartDate" type="xs:dateTime" />
+              <xs:element name="SellEndDate" msprop:Generator_ColumnVarNameInTable="columnSellEndDate" msprop:Generator_ColumnPropNameInRow="SellEndDate" msprop:Generator_ColumnPropNameInTable="SellEndDateColumn" msprop:Generator_UserColumnName="SellEndDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DiscontinuedDate" msprop:Generator_ColumnVarNameInTable="columnDiscontinuedDate" msprop:Generator_ColumnPropNameInRow="DiscontinuedDate" msprop:Generator_ColumnPropNameInTable="DiscontinuedDateColumn" msprop:Generator_UserColumnName="DiscontinuedDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Expr1" msprop:Generator_ColumnVarNameInTable="columnExpr1" msprop:Generator_ColumnPropNameInRow="Expr1" msprop:Generator_ColumnPropNameInTable="Expr1Column" msprop:Generator_UserColumnName="Expr1" type="xs:short" />
+              <xs:element name="Expr2" msprop:Generator_ColumnVarNameInTable="columnExpr2" msprop:Generator_ColumnPropNameInRow="Expr2" msprop:Generator_ColumnPropNameInTable="Expr2Column" msprop:Generator_UserColumnName="Expr2" type="xs:short" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ShoppingCartItem" msprop:Generator_TableClassName="ShoppingCartItemDataTable" msprop:Generator_TableVarName="tableShoppingCartItem" msprop:Generator_RowChangedName="ShoppingCartItemRowChanged" msprop:Generator_TablePropName="ShoppingCartItem" msprop:Generator_RowDeletingName="ShoppingCartItemRowDeleting" msprop:Generator_RowChangingName="ShoppingCartItemRowChanging" msprop:Generator_RowEvHandlerName="ShoppingCartItemRowChangeEventHandler" msprop:Generator_RowDeletedName="ShoppingCartItemRowDeleted" msprop:Generator_RowClassName="ShoppingCartItemRow" msprop:Generator_UserTableName="ShoppingCartItem" msprop:Generator_RowEvArgName="ShoppingCartItemRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ShoppingCartItemID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnShoppingCartItemID" msprop:Generator_ColumnPropNameInRow="ShoppingCartItemID" msprop:Generator_ColumnPropNameInTable="ShoppingCartItemIDColumn" msprop:Generator_UserColumnName="ShoppingCartItemID" type="xs:int" />
+              <xs:element name="ShoppingCartID" msprop:Generator_ColumnVarNameInTable="columnShoppingCartID" msprop:Generator_ColumnPropNameInRow="ShoppingCartID" msprop:Generator_ColumnPropNameInTable="ShoppingCartIDColumn" msprop:Generator_UserColumnName="ShoppingCartID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Quantity" msprop:Generator_ColumnVarNameInTable="columnQuantity" msprop:Generator_ColumnPropNameInRow="Quantity" msprop:Generator_ColumnPropNameInTable="QuantityColumn" msprop:Generator_UserColumnName="Quantity" type="xs:int" />
+              <xs:element name="ProductID" msprop:Generator_ColumnVarNameInTable="columnProductID" msprop:Generator_ColumnPropNameInRow="ProductID" msprop:Generator_ColumnPropNameInTable="ProductIDColumn" msprop:Generator_UserColumnName="ProductID" type="xs:int" />
+              <xs:element name="DateCreated" msprop:Generator_ColumnVarNameInTable="columnDateCreated" msprop:Generator_ColumnPropNameInRow="DateCreated" msprop:Generator_ColumnPropNameInTable="DateCreatedColumn" msprop:Generator_UserColumnName="DateCreated" type="xs:dateTime" />
+              <xs:element name="ModifiedDate" msprop:Generator_ColumnVarNameInTable="columnModifiedDate" msprop:Generator_ColumnPropNameInRow="ModifiedDate" msprop:Generator_ColumnPropNameInTable="ModifiedDateColumn" msprop:Generator_UserColumnName="ModifiedDate" type="xs:dateTime" />
+              <xs:element name="LocationID" msprop:Generator_ColumnVarNameInTable="columnLocationID" msprop:Generator_ColumnPropNameInRow="LocationID" msprop:Generator_ColumnPropNameInTable="LocationIDColumn" msprop:Generator_UserColumnName="LocationID" type="xs:short" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ProductInventory" />
+      <xs:field xpath="mstns:ProductID" />
+      <xs:field xpath="mstns:LocationID" />
+      <xs:field xpath="mstns:Expr3" />
+      <xs:field xpath="mstns:Expr2" />
+    </xs:unique>
+    <xs:unique name="ShoppingCartItem_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ShoppingCartItem" />
+      <xs:field xpath="mstns:ShoppingCartItemID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
